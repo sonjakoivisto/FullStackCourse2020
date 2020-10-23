@@ -1,0 +1,12 @@
+note over browser:
+user writes note in the 
+text field and clicks save
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa (contains note and date as JSON)
+server-->browser: status code 201 (created)
+
+note over browser:
+browser stays on the same 
+page and displays new note
+end note
